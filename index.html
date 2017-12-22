@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Don't touch obstacles</title>
+  <link rel="stylesheet" href="game.css">
+  <script type="text/javascript" src="game.js"></script>
+</head>
+
+<body onkeypress="jump(event)">
+  <h1>Run and Jump</h1>
+  <h2>SCORE:<span id="score">0</span> </h2>
+  <button id="start" type="button" onclick="startGame()" name="button">start</button>
+  <button id="pause" type="button" onclick="stopGame()" name="button">pause</button>
+  <button id='reset' type="button" name="button" onclick="resetGame()">Reset</button>
+  <div id="field">
+    <div id="playerFileld">
+      <img id="player" src="person.gif">
+    </div>
+    <div id="obstacles">
+    </div>
+  </div>
+</body>
+
+</html>
