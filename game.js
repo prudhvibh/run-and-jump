@@ -4,7 +4,7 @@ let score = 0;
 
 let startGame = function() {
   let startButton = document.getElementById("start");
-  interval = setInterval(moveObstacle, 4);
+  interval = setInterval(moveObstacle, 0.01);
   startButton.onclick = null;
 }
 
@@ -14,7 +14,7 @@ let jump = function() {
     player.style.bottom =  "150px";
     setTimeout(function() {
       player.style.bottom = "0px";
-    }, 500);
+    }, 600);
   }
 }
 
@@ -32,16 +32,16 @@ let moveObstacle = function() {
 
 let checkForCollision = function() {
   let obstacle = document.getElementById("obstacles");
-  let playerId = document.getElementById("player");
+  let player = document.getElementById("player");
   let obstaclePosition = obstacle.style.right.slice(0, -2);
-  if ((obstaclePosition > 1210 && playerId.y > 545)) {
+  if (obstaclePosition > 1150 && player.y > 350){
     alertScore()
-    stopGame();
+    pauseGame();
     resetGame();
   }
 }
 
-let stopGame = function() {
+let pauseGame = function() {
   let startButton = document.getElementById("start");
   clearInterval(interval);
   startButton.onclick = startGame;

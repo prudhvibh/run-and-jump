@@ -48,16 +48,16 @@ h2 {
 
 #playerFileld {
   float: left;
-  height: 100px;
-  width: 50px;
-  margin-top: 400px;
+  height: 200px;
+  width: 150px;
+  margin-top: 200px;
   position: relative;
   bottom: 0px;
 }
 
 #player {
-  height: 100px;
-  width: 50px;
+  height: 300px;
+  width: 200px;
   position: relative;
   bottom: 0px;
   margin-left: 0px;
