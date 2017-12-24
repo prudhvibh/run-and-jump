@@ -1,26 +1,22 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-  <meta charset="utf-8">
-  <title>Don't touch obstacles</title>
-  <link rel="stylesheet" href="game.css">
-  <script type="text/javascript" src="game.js"></script>
-</head>
-
-<body onkeypress="jump(event)">
-  <h1>Run and Jump</h1>
-  <h2>SCORE:<span id="score">0</span> </h2>
-  <button id="start" type="button" onclick="startGame()" name="button">start</button>
-  <button id="pause" type="button" onclick="pauseGame()" name="button">pause</button>
-  <button id='reset' type="button" name="button" onclick="resetGame()">Reset</button>
-  <div id="field">
-    <div id="playerFileld">
-      <img id="player" src="source.gif">
-    </div>
-    <div id="obstacles">
-    </div>
+  <head>
+    <meta charset="utf-8">
+    <link rel="icon" href="favicon.jpeg" type="image/gif">
+    <link rel="stylesheet" href="public/css/index.css">
+    <title>Hang Man</title>
+  </head>
+  <body>
+    <img src="favicon.jpeg" alt="hangMan">
+    <a href="game.html">
+    <button type="button" name="button">click here to start</button>
+  </a>
+    <h2>Instructions</h2>
+    <div class="Instructions">
+    <p>Here a boy is running and some obstacles will come in his way.</p>
+    <p>You have pass through the obstacles.</p>
+    <p>Press space bar to jump</p>
   </div>
-</body>
-
+    <h3>All the best</h3>
+  </body>
 </html>

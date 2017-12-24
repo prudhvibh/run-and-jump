@@ -1,0 +1,31 @@
+img {
+  margin-left: 40%;
+  margin-top: 3%;
+}
+
+button {
+  position: absolute;
+  top: 50%;
+  left: 43%;
+  font-size: 20px;
+  border: 2px solid black;
+  border-radius: 50px 20px;
+}
+
+h2 {
+  position: absolute;
+  left: 44%;
+  top: 55%;
+}
+
+.Instructions {
+  position: absolute;
+  top: 62%;
+  left: 35%
+}
+
+h3 {
+  position: absolute;
+  top: 80%;
+  left: 45%;
+}
