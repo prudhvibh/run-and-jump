@@ -2,7 +2,7 @@ let interval = 0
 let position = 0;
 let score = 0;
 
-let startGame = function() {
+let startGame = function(){
   let startButton = document.getElementById("start");
   interval = setInterval(moveObstacle, 0.01);
   startButton.onclick = null;
